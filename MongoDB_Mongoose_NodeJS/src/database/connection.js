@@ -2,7 +2,7 @@
 import mongoose from "mongoose";
 
 //crio uma string de conexao cujo database se chama project
-mongoose.connect('mongodb://localhost:27017/project', {
+mongoose.connect("mongodb://mongo:KbT8Ylz6muZbLDEw2WjY@containers-us-west-75.railway.app:7145", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
