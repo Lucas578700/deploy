@@ -1,8 +1,10 @@
 //importo o mongoose
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+DeviceMotionEvent.config();
 
 //crio uma string de conexao cujo database se chama project
-mongoose.connect("mongodb://mongo:KbT8Ylz6muZbLDEw2WjY@containers-us-west-75.railway.app:7145", {
+mongoose.connect(process.env.MONGODB, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
